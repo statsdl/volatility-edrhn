@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+title: volatility-edrhn
+message: "If you use this software, please cite the associated EDRHN paper and this repository."
+authors:
+  - family-names: Bhambu
+    given-names: Aryan
+  - family-names: Natarajan
+    given-names: Selvaraju
+  - family-names: Suganthan
+    given-names: Ponnuthurai Nagaratnam
+version: 0.1.0
+license: MIT
+doi: 10.1016/j.neunet.2025.108207
