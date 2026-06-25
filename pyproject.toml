@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "volatility-edrhn"
-version = "0.1.0"
+version = "0.1.1"
 description = "Ensemble deep randomized Hopfield network for volatility time-series forecasting."
 readme = "PYPI_README.md"
 requires-python = ">=3.10"

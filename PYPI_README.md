@@ -11,27 +11,18 @@ A rich documentation is available in the GitHub repository.
 
 Ensemble Deep Randomized Hopfield Network for volatility time-series forecasting.
 
-volatility-edrhn is a Python package for volatility forecasting using ensemble deep randomized Hopfield network models with multiple output layers.
+volatility-edrhn is a Python package for volatility forecasting using ensemble deep randomized Hopfield network models with multiple output layers. 
 
-The package is developed for nonlinear volatility time-series forecasting, financial risk modeling, and regression problems where fast training, randomized representation learning, and reliable forecast generation are important.
-
-volatility-edrhn combines randomized neural feature mapping, Hopfield-style associative memory transformations, and efficient regularized output-layer learning. This allows the model to capture nonlinear volatility dynamics without requiring expensive gradient-based training of all hidden parameters.
-
-This package provides two primary components:
-
-- **EDRHNRegressor**: An ensemble deep randomized Hopfield network regressor that stacks randomized Hopfield-style layers and combines multiple output readouts for stable volatility forecasting.
-- **Forecasting utilities**: Helpers for supervised volatility-frame construction, chronological splitting, scaling, metrics, and Hyperopt/TPE-based tuning.
+edrhn combines randomized neural feature mapping, Hopfield-style associative memory transformations, and efficient regularized output-layer learning. This allows the model to capture nonlinear volatility dynamics without requiring expensive gradient-based training of all hidden parameters.
 
 ## Key Features
 
 - **EDRHN Model**: Implements an ensemble deep randomized Hopfield network for volatility forecasting.
 - **Multiple Output Layers**: Uses layer-wise output readouts and aggregates predictions across hidden depths.
 - **Hopfield-Style Feature Interaction**: Randomized Hopfield transformations help capture nonlinear dependence in volatility features.
-- **Efficient Training**: Uses randomized hidden representations with regularized closed-form output learning.
-- **Volatility Forecasting**: Designed for volatility time-series forecasting and synthetic benchmark experiments.
+- **Efficient Training**: Uses randomized hidden representations with regularized output-layer learning.
 - **Hyperparameter Tuning**: Supports Hyperopt/TPE search for layer-wise model selection.
 - **Forecasting Metrics**: Provides RMSE, MAE, and MAPE helpers.
-- **Research-Oriented Design**: Suitable for reproducible experiments in volatility forecasting and randomized neural networks.
 
 ## Installation
 
@@ -164,16 +155,6 @@ An ensemble deep randomized Hopfield network regressor for volatility forecastin
 - `mean_absolute_error`: Computes MAE.
 - `mean_absolute_percentage_error`: Computes MAPE.
 
-## Dataset Details
-
-| Component | Description |
-|---|---|
-| Input type | Volatility time-series features |
-| Forecasting target | Realized volatility |
-| Model type | Ensemble deep randomized Hopfield network |
-| Split type | Chronological train-validation-test split |
-| Metrics | RMSE, MAE, MAPE |
-
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
@@ -192,9 +173,3 @@ If you use this package in your research, please cite:
   doi={10.1016/j.neunet.2025.108207}
 }
 ```
-
-## Authors
-
-- Aryan Bhambu
-- Selvaraju Natarajan
-- Ponnuthurai Nagaratnam Suganthan
